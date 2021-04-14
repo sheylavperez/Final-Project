@@ -105,7 +105,6 @@ GameObject:
   - component: {fileID: 1783231705437219120}
   - component: {fileID: 3863150324325779916}
   - component: {fileID: 6371754999671256520}
-  - component: {fileID: 2086816919800496239}
   - component: {fileID: 1625460217836265213}
   m_Layer: 0
   m_Name: AngelRing2
@@ -175,20 +174,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &2086816919800496239
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1625460217836265212}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8843512388175210438, guid: efb6198bcfd84b649b296281720c737f, type: 3}
 --- !u!95 &1625460217836265213
 Animator:
   serializedVersion: 3
@@ -313,7 +298,6 @@ GameObject:
   - component: {fileID: 2475236611626408626}
   - component: {fileID: 4227331197893616776}
   - component: {fileID: 4333336735489264780}
-  - component: {fileID: 5128833354351261065}
   - component: {fileID: 3316625109582103784}
   m_Layer: 0
   m_Name: AngelRing1
@@ -383,20 +367,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &5128833354351261065
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3316625109582103791}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4739429426187376568, guid: efb6198bcfd84b649b296281720c737f, type: 3}
 --- !u!95 &3316625109582103784
 Animator:
   serializedVersion: 3
@@ -427,6 +397,7 @@ GameObject:
   - component: {fileID: 4154105746884538669}
   - component: {fileID: 3669740481082190736}
   - component: {fileID: 3669740481082190737}
+  - component: {fileID: 4670677969140909461}
   m_Layer: 0
   m_Name: AngelModel_Prefab
   m_TagString: Untagged
@@ -485,7 +456,20 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 2.26
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.02, z: 0}
+--- !u!114 &4670677969140909461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3669740481082190743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4d14a0771fa13749a40deacdd1806ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 30
 --- !u!1 &4480202396526792839
 GameObject:
   m_ObjectHideFlags: 0

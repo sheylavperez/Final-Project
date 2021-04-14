@@ -15,6 +15,9 @@ public class Gun : MonoBehaviour
     //because we're Raycasting
     public Camera fpsCam;
 
+    //here we're calling our particle system
+    public ParticleSystem muzzleFlash;
+
     // Update is called once per frame
     void Update()
     {
@@ -34,6 +37,10 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
+    	//we activate our particle system
+    	muzzleFlash.Play();
+
+
     	//the variable raycastHit is where we'll store the info
     	//on what we're hitting with the ray
     	RaycastHit hit;
@@ -53,6 +60,22 @@ public class Gun : MonoBehaviour
     		//first we get the info of the object we hit
     		//remember "hit" is our variable where the info is stored
     		Debug.Log(hit.transform.name);
+
+    		//here we're referencing the Enemy script
+    		//and storing that info inside a variable
+    		//it's a variable type "Enemy" just like the script
+    		Enemy enemy = hit.transform.GetComponent<Enemy>();
+
+    		//but not everything we shoot at will be an Enemy
+    		//so make a check to see if we found an Enemy component
+    		//inside our target
+
+    		if (enemy != null)
+    		{
+    			//we're making our damage = amount
+    			enemy.TakeDamage(damage);
+    			//this will make the enemy take damage
+    		}
     	}
 
     }
