@@ -31,6 +31,9 @@ public class PlayerMovement : MonoBehaviour
     //our maximum jumping height
     public float jumpHeight = 3f;
 
+    //our sound effect
+    public AudioSource jumpSFX;
+
     void Update()
     {
     	//we're gonna make a groundCheck by creating a sphere that will
@@ -75,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
     	//and here is where we do our jumping code
     	if (Input.GetButtonDown("Jump") && isGrounded)
     	{
+    		jumpSFX.Play();
     		velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
     	}
 
