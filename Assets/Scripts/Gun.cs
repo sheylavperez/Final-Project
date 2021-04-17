@@ -18,6 +18,17 @@ public class Gun : MonoBehaviour
     //here we're calling our particle system
     public ParticleSystem muzzleFlash;
 
+    //here we make a reference to the boom
+    //after the enemy gets destroyed
+    public GameObject impactEffect;
+
+    //here we'll create a force to push
+    //our enemy back
+    public float impactForce = 200f;
+
+    //sound effect!
+    public AudioSource shootSFX;
+
     // Update is called once per frame
     void Update()
     {
@@ -37,7 +48,10 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
-    	//we activate our particle system
+    	//here we make our sound
+        shootSFX.Play();
+
+        //we activate our particle system
     	muzzleFlash.Play();
 
 
@@ -76,6 +90,30 @@ public class Gun : MonoBehaviour
     			enemy.TakeDamage(damage);
     			//this will make the enemy take damage
     		}
+
+    		//here we make a force push our enemy a little
+    		//first we check if enemy has a rigidbody
+
+    		 if (hit.rigidbody != null)
+
+            {
+
+                hit.rigidbody.AddForce(-hit.normal * impactForce);
+                
+
+            }
+
+
+
+    		//here we instantiate our boom after the object is
+    		//destroyed
+    		//(what you instantiate, where you instantiate (in this case the point of impact), and rotation)
+    		//rotation as in where the particles face the boom
+
+    		//now we make this into a GameObject
+    		GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+    		//and we make it destroy itself after 2 seconds
+    		Destroy(impactGO, 2f);
     	}
 
     }
