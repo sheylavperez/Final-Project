@@ -263,13 +263,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 987b0103d8e6941f9b49cb93f23075f2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b18b97f099ec41529a0496f142d3c8c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -323,7 +323,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -27.4, y: 334}
+  m_AnchoredPosition: {x: -134.59, y: 323}
   m_SizeDelta: {x: 269.18155, y: 29.58635}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &892491622
@@ -440,7 +440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 633, y: -45.641}
+  m_AnchoredPosition: {x: 478, y: -45.641}
   m_SizeDelta: {x: 302.4004, y: 69.899994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &898383927
@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -475,7 +475,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PRESS ENTER
+  m_Text: PRESS SPACE
 --- !u!222 &898383928
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -587,8 +587,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 24.8, y: 127.600006}
-  m_SizeDelta: {x: 1425.604, y: 161.1817}
+  m_AnchoredPosition: {x: 163.9, y: 127.600006}
+  m_SizeDelta: {x: 1147.4031, y: 161.1817}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1218963592
 MonoBehaviour:
@@ -603,7 +603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.31224212, g: 0.30170882, b: 0.5660378, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -993,8 +993,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294046206
+  m_fontColor: {r: 0.9960785, g: 0.9450981, b: 0.9450981, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1077,8 +1077,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4964927, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.8784502}
-  m_AnchoredPosition: {x: -85.978, y: -39.028}
-  m_SizeDelta: {x: 1053.1685, y: 43.057877}
+  m_AnchoredPosition: {x: -103.3, y: -30.278}
+  m_SizeDelta: {x: 860.2018, y: 60.556946}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1783213555
 GameObject:
@@ -1111,11 +1111,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText: {fileID: 1741809848}
   Sentences:
-  - Hello
-  - I am lucifer
-  - 
-  - 
-  - 
+  - "Hello, you are Lucifer and there\u2019s a war going around! You need to recruit
+    more troops so you can win this battle."
+  - 'With this special gun, you can turn angels into devils. Please shoot as many
+    as you can.  '
+  - "Here\u2019s how the games works: Press the arrow key \u2190 \u2192 to move around
+    and find the angels."
+  - 'Use your computer mouse and press the left click to use your gun and get some
+    troops.  '
+  - 'Press space to jump! You know everything now, NOW GO GET SOME TROOPS.  '
   - 
   - 
   - 
