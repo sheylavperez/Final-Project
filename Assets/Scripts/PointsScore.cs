@@ -19,6 +19,6 @@ public class PointsScore : MonoBehaviour
     
     void Update()
     {
-        score.text = "Troops:" + scoreValue;
+        score.text = "Troops: " + scoreValue;
     }
 }
