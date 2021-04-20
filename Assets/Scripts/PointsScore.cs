@@ -6,17 +6,16 @@ using TMPro;
 
 public class PointsScore : MonoBehaviour
 {
-	public static int scoreValue = 0;
+    public static int scoreValue = 0;
 
 	[SerializeField] TextMeshProUGUI score;
-
     
     void Start()
     {
+        scoreValue = 0;
         score = GetComponent<TextMeshProUGUI>();
     }
 
-    
     void Update()
     {
         score.text = "Troops: " + scoreValue;

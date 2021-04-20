@@ -11,10 +11,18 @@ public class FinalScore : MonoBehaviour
 	[SerializeField] TextMeshProUGUI endScore;
 
     // Start is called before the first frame update
+    //void Start()
     void Start()
     {
+    	//We do this so the Score resets to 0, and then it grabs the new
+    	//scoreValue made after we played again
+    	finalScore = 0;
+    	finalScore = PointsScore.scoreValue;
+
+
+
        endScore = GetComponent<TextMeshProUGUI>();
-       endScore.text = "Total troops: " + finalScore;
+       endScore.text = "TOTAL TROOPS: " + finalScore;
     }
 
 }

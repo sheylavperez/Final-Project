@@ -31,13 +31,13 @@ public class Countdown : MonoBehaviour
         {
         	currentTime = 0;
         	//SceneManager.LoadScene("TheEnd");
-            SceneManager.LoadScene("Scene_That_Holds_SomeCode_I_Wanna_Add_To_The_Last_Scene");
+            SceneManager.LoadScene("WinLoseScenes");
         	Debug.Log("Game ended!");
         }
         if (currentTime <= 5)
     	{
     		countdownText.color = red;
     	}
-        Debug.Log(currentTime);
+        //Debug.Log(currentTime);
     }
 }
