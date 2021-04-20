@@ -10,7 +10,7 @@ public class Countdown : MonoBehaviour
 	//when the timer ends
 	float currentTime = 0f;
 	//total timer
-	float startingTime = 50f;
+	float startingTime = 105f;
 
 	Color red = Color.red;
 
