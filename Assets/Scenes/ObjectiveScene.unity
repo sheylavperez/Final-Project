@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641252, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 416508727}
   - component: {fileID: 416508726}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -321,10 +321,10 @@ RectTransform:
   m_Father: {fileID: 1218963591}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -134.59, y: 323}
-  m_SizeDelta: {x: 269.18155, y: 29.58635}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -138, y: 258}
+  m_SizeDelta: {x: 269.18152, y: 109.58635}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &892491622
 MonoBehaviour:
@@ -449,9 +449,9 @@ RectTransform:
   m_Father: {fileID: 1218963591}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 478, y: -45.641}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -99, y: 35.359}
   m_SizeDelta: {x: 302.4004, y: 69.899994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &898383927
@@ -590,7 +590,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c7160f459b9c05c4b9ff8fda5f6c4bac, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.626
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1030,10 +1030,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1249,15 +1249,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText: {fileID: 1741809848}
   Sentences:
-  - "Hello, you are Lucifer and there\u2019s a war going around! You need to recruit
-    more troops so you can win this battle."
+  - As Lucifer, prince of darkness, you need to recruit troops to win your war agaisnt
+    heaven!
   - 'With this special gun, you can turn angels into devils. Please shoot as many
     as you can.  '
-  - "Here\u2019s how the games works: Press the arrow key \u2190 \u2192 to move around
-    and find the angels."
+  - "Here\u2019s how the game works: Use WASD to move around and find the angels."
   - 'Use your computer mouse and press the left click to use your gun and get some
     troops.  '
-  - 'Press space to jump! You know everything now, NOW GO GET SOME TROOPS.  '
+  - Press space to jump! You know everything now, SO GO GET SOME TROOPS!!
   - Press the start button above when you feel ready!
   - 
   - 
